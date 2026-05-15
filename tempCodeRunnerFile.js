@@ -1,1 +1,1 @@
-4
+gameName.substring(0,2)
