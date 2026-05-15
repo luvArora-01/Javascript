@@ -61,3 +61,36 @@ const myFunction = function(){
 // console.log(typeof array);         //object
 // console.log(typeof object);       //object
 // console.log(typeof function);    //function
+
+
+
+
+
+
+
+
+/********************* MEMORIES ******************/
+
+// TYPES:-
+
+// 1. Stack (Primitive)
+// 2. Heap (Non-Primitive)
+
+let myName = "Love Arora"
+let anotherName = myName
+anotherName = "luv"
+console.log(myName);
+console.log(anotherName);
+
+
+
+let userOne = {
+    email:"user@gmail.com",
+    upi: "user@ptsbi"
+};
+
+let userTwo = userOne
+userTwo.email = "user@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
