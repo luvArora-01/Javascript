@@ -1,1 +1,2 @@
-gameName.substring(0,2)
+console.log(Math.abs(-4));
+// console.log(Math.abs(-4));
