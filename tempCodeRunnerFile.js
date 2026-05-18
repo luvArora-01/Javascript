@@ -1,2 +1,1 @@
-console.log(Math.abs(-4));
-// console.log(Math.abs(-4));
+const Arr1 = [8,6,5,2,4]
