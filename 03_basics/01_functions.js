@@ -89,5 +89,3 @@ function returnValue (getArr){
 }
 // printing Array
 console.log(returnValue(newArr));
-
-
