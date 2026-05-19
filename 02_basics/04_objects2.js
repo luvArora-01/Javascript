@@ -66,3 +66,45 @@ const users = [
     },
 ]
 console.log(users);
+
+
+
+// De-Structuring
+
+const course = {
+    courseName: "Javascript",
+    price:"999",
+    courseInstructor:"Love"
+}
+/* de structuring means special syntax that allows you to "unpack" values from arrays 
+or properties from objects and assign them directly to distinct variables */ 
+const {courseInstructor:ins} = course
+console.log(ins);
+
+
+// Intro to API
+
+/*
+    API:: a set of rules and protocols that allows different software programs 
+    to communicate and share data with each other
+*/
+
+// API bring data mostly in JSON sometime array too
+
+// format::-
+
+// 1.
+
+// {
+//     "name":"love"
+//     "courseName": "Javascript",
+//     "price":"free",
+// }
+
+// 2.
+
+// [
+//     {},
+//     {},
+//     {}
+// ]

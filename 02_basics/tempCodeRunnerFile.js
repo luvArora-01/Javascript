@@ -1,1 +1,1 @@
-mySym
+obj1,obj2
