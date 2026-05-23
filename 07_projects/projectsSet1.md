@@ -8,7 +8,6 @@
 ## project 1
 
 ```javascript
-console.log('love')
 const buttons = document.querySelectorAll('.button')
 const body = document.querySelector("body")
 
@@ -40,7 +39,6 @@ buttons.forEach(function(button){
 ## project 2
 
 ```javascript
-console.log('love')
 const form = document.querySelector('form')
 // this usercase will give you empty values
 // const height = parseInt(document.querySelector('#height').value) 
@@ -72,7 +70,17 @@ form.addEventListener('submit',function(event){
             range.innerHTML = `<span>You are overweight</span>`
         }
     }
-    
-    
 })
+```
+
+## project 3
+
+```javascript
+const clock = document.getElementById('clock')
+
+setInterval(function(){
+    let date = new Date()
+    clock.innerHTML = date.toLocaleTimeString();
+},1000);
+
 ```
