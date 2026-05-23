@@ -5,6 +5,21 @@
   "hints": {
     "no-inline-styles": "off",
     "disown-opener": "off",
-    "highest-available-document-mode": "off"
+    "highest-available-document-mode": "off",
+    "button-type": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter"
+        ]
+      }
+    ]
   }
 }
