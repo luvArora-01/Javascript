@@ -5,7 +5,7 @@ const userInput = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
 const remaining = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
-const startOver = document.querySelector('.resultParas');
+const startOver = document.querySelector('.resultParse');
 
 const p = document.createElement('p')
 
@@ -81,11 +81,12 @@ function endGame(){
     // disable the input field and create a button to start again
     userInput.value = ''
     userInput.setAttribute('disabled', '')
+    submit.disabled = true;
     p.classList.add('button')
     p.innerHTML = `<button id= "newGame">Start new Game</button>`;
     startOver.appendChild(p)
     playGame = false;
-    newGame();
+    newGame()
 }
 
 function newGame(){
@@ -98,6 +99,7 @@ function newGame(){
         guessSlot.innerHTML = '';
         remaining.innerHTML = `${11-numGuess}`;
         userInput.removeAttribute('disabled');
+        submit.disabled = false;
         displayMessage('')
         startOver.removeChild(p);
         playGame = true;
