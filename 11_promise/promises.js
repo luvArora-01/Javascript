@@ -116,6 +116,14 @@ consumePromiseFive()
 // }
 // getAllUsers()
 
+
+
+
+// ## FETCH API (create a high priority queue for network requests)
+// => The fetch() method of the Window interface starts the process of fetching a 
+// resource from the network, returning a promise that is fulfilled once the response is available.
+
+
 // same using then catch finally
 fetch('https://api.github.com/users/luvArora-01')
 .then((response) => response.json())
