@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope</title>
+</head>
+
+<body style="background-color: #212121;">
+
+</body>
+
+<script>
+
+
+// # lexical scoping
+function outer(){
+    let userName = "dracula";
+    
+    // inner function one  
+    function innerOne(){
+        let innerName = "batman";
+        console.log(`inner one: ${userName}`); 
+    }
+    innerOne();
+    
+    // inner function two
+    function innerTwo(){
+        // can't access as the "inner function one" is ouside of "inner function two"
+        // console.log(`inner two: ${innerName}`); 
+    }
+    innerTwo();
+    
+}
+outer();
+// console.log(`Too outer ${userName}`); // can't be access
+
+
+</script>
+
+</html>
